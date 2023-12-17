@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbaw2elv47yum"
-path="res://.godot/imported/鹿毛.png-8cc5a8df95a2f3e4e03ea83a62741744.ctex"
+uid="uid://mtli15df16j4"
+path="res://.godot/imported/青鹿毛.png-5acff8fceb5baf437403da64ff3d7476.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://鹿毛.png"
-dest_files=["res://.godot/imported/鹿毛.png-8cc5a8df95a2f3e4e03ea83a62741744.ctex"]
+source_file="res://textures/青鹿毛.png"
+dest_files=["res://.godot/imported/青鹿毛.png-5acff8fceb5baf437403da64ff3d7476.ctex"]
 
 [params]
 

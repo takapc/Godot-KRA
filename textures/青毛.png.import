@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lyy4scxpnreh"
-path="res://.godot/imported/白毛.png-a36d3f4ac5ea6b68f618d1eb04f552cc.ctex"
+uid="uid://b856yh0fbdo0g"
+path="res://.godot/imported/青毛.png-defeb8b39f5c6baec9a438a691d8599f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://白毛.png"
-dest_files=["res://.godot/imported/白毛.png-a36d3f4ac5ea6b68f618d1eb04f552cc.ctex"]
+source_file="res://textures/青毛.png"
+dest_files=["res://.godot/imported/青毛.png-defeb8b39f5c6baec9a438a691d8599f.ctex"]
 
 [params]
 

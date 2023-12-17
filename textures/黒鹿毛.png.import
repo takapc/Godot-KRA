@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccp2qc2i2bq4b"
-path="res://.godot/imported/芦毛.png-e95226342864e062086f13fa25330f24.ctex"
+uid="uid://tfykfjbegmyc"
+path="res://.godot/imported/黒鹿毛.png-d2d19ce472cedaf5715aa677dde988f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://芦毛.png"
-dest_files=["res://.godot/imported/芦毛.png-e95226342864e062086f13fa25330f24.ctex"]
+source_file="res://textures/黒鹿毛.png"
+dest_files=["res://.godot/imported/黒鹿毛.png-d2d19ce472cedaf5715aa677dde988f1.ctex"]
 
 [params]
 

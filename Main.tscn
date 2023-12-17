@@ -1,16 +1,40 @@
-[gd_scene load_steps=2 format=3 uid="uid://cy2q8vtwjutrb"]
+[gd_scene load_steps=15 format=3 uid="uid://cy2q8vtwjutrb"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_6guxl"]
+[ext_resource type="PackedScene" uid="uid://dqxnmwobtysux" path="res://HorseScene/Horse1.tscn" id="2_twpfw"]
+[ext_resource type="PackedScene" uid="uid://c7orqkihvxa0n" path="res://HorseScene/Horse2.tscn" id="3_0eewp"]
+[ext_resource type="PackedScene" uid="uid://b03e2ejrnb1x3" path="res://HorseScene/Horse3.tscn" id="4_jxmxo"]
+[ext_resource type="PackedScene" uid="uid://p0w2eebtbkxl" path="res://HorseScene/Horse4.tscn" id="5_nts4o"]
+[ext_resource type="PackedScene" uid="uid://cihmutpym1lcs" path="res://HorseScene/Horse5.tscn" id="6_0upil"]
+[ext_resource type="PackedScene" uid="uid://d3luwf1iby8xl" path="res://HorseScene/Horse6.tscn" id="7_ahywq"]
+[ext_resource type="PackedScene" uid="uid://baktfsvl18y6n" path="res://HorseScene/Horse7.tscn" id="8_pev11"]
+[ext_resource type="PackedScene" uid="uid://bd0mbwhnb1fer" path="res://HorseScene/Horse8.tscn" id="9_qece7"]
+[ext_resource type="PackedScene" uid="uid://c2hwnc8vk63u5" path="res://HorseScene/Horse9.tscn" id="10_p051n"]
+[ext_resource type="PackedScene" uid="uid://cbnv6fx5y7vpn" path="res://HorseScene/Horse10.tscn" id="11_gujt3"]
+[ext_resource type="PackedScene" uid="uid://bckbd1ym38emk" path="res://HorseScene/Horse11.tscn" id="12_1a2ir"]
+[ext_resource type="PackedScene" uid="uid://pswxgfj33hnt" path="res://HorseScene/Horse12.tscn" id="13_pp81n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7wifc"]
+size = Vector2(462.375, 18.4243)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_6guxl")
+RunningHorse = Array[PackedScene]([ExtResource("2_twpfw"), ExtResource("3_0eewp"), ExtResource("4_jxmxo"), ExtResource("5_nts4o"), ExtResource("6_0upil"), ExtResource("7_ahywq"), ExtResource("8_pev11"), ExtResource("9_qece7"), ExtResource("10_p051n"), ExtResource("11_gujt3"), ExtResource("12_1a2ir"), ExtResource("13_pp81n")])
 
-[node name="Label" type="Label" parent="."]
-offset_left = 342.0
-offset_top = 215.0
-offset_right = 727.0
-offset_bottom = 460.0
-text = "わろた
-"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1072.1, 324.094)
+rotation = 3.14159
+scale = Vector2(0.345587, -35.1608)
+shape = SubResource("RectangleShape2D_7wifc")
+
+[node name="Line2D" type="Line2D" parent="Area2D"]
+points = PackedVector2Array(1000, 2.08165e-12, 1000, 648)
+width = 20.0
+default_color = Color(0.129412, 0.129412, 0.129412, 1)
+metadata/_edit_group_ = true

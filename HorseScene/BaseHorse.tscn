@@ -1,14 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://q5gejktvwrci"]
+[gd_scene load_steps=13 format=3 uid="uid://q5gejktvwrci"]
 
 [ext_resource type="Script" path="res://horses.gd" id="1_tjedy"]
-[ext_resource type="Texture2D" uid="uid://ck0swvcw32hku" path="res://栃毛.png" id="2_3v4dg"]
-[ext_resource type="Texture2D" uid="uid://kdhw00qefird" path="res://栃栗毛.png" id="2_5manf"]
-[ext_resource type="Texture2D" uid="uid://tfykfjbegmyc" path="res://黒鹿毛.png" id="2_41kwl"]
-[ext_resource type="Texture2D" uid="uid://b856yh0fbdo0g" path="res://青毛.png" id="2_2125k"]
-[ext_resource type="Texture2D" uid="uid://mtli15df16j4" path="res://青鹿毛.png" id="3_40pr0"]
-[ext_resource type="Texture2D" uid="uid://lyy4scxpnreh" path="res://白毛.png" id="4_4ow5x"]
-[ext_resource type="Texture2D" uid="uid://cbaw2elv47yum" path="res://鹿毛.png" id="4_77kdc"]
-[ext_resource type="Texture2D" uid="uid://ccp2qc2i2bq4b" path="res://芦毛.png" id="5_fwvoe"]
+[ext_resource type="Texture2D" uid="uid://ck0swvcw32hku" path="res://textures/栃毛.png" id="2_3v4dg"]
+[ext_resource type="Texture2D" uid="uid://kdhw00qefird" path="res://textures/栃栗毛.png" id="2_5manf"]
+[ext_resource type="Texture2D" uid="uid://tfykfjbegmyc" path="res://textures/黒鹿毛.png" id="2_41kwl"]
+[ext_resource type="Texture2D" uid="uid://b856yh0fbdo0g" path="res://textures/青毛.png" id="2_2125k"]
+[ext_resource type="Texture2D" uid="uid://mtli15df16j4" path="res://textures/青鹿毛.png" id="3_40pr0"]
+[ext_resource type="Texture2D" uid="uid://lyy4scxpnreh" path="res://textures/白毛.png" id="4_4ow5x"]
+[ext_resource type="Texture2D" uid="uid://cbaw2elv47yum" path="res://textures/鹿毛.png" id="4_77kdc"]
+[ext_resource type="Texture2D" uid="uid://ccp2qc2i2bq4b" path="res://textures/芦毛.png" id="5_fwvoe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d57r1"]
 animations = [{
@@ -81,12 +81,13 @@ animations = [{
 radius = 95.0
 height = 490.0
 
-[node name="Horses" type="Area2D"]
+[sub_resource type="Theme" id="Theme_ktgla"]
+
+[node name="BaseHorse" type="Area2D"]
 scale = Vector2(0.2, 0.2)
 script = ExtResource("1_tjedy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(100, 100)
 sprite_frames = SubResource("SpriteFrames_d57r1")
 animation = &"芦毛"
 
@@ -95,5 +96,18 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_0qgug")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Number" type="Label" parent="."]
+offset_left = -90.0
+offset_top = -35.0
+offset_right = -50.0
+offset_bottom = 20.0
+theme = SubResource("Theme_ktgla")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "1
+"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
