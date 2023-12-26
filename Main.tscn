@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cy2q8vtwjutrb"]
+[gd_scene load_steps=16 format=3 uid="uid://cy2q8vtwjutrb"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_6guxl"]
 [ext_resource type="PackedScene" uid="uid://dqxnmwobtysux" path="res://HorseScene/Horse1.tscn" id="2_twpfw"]
@@ -13,9 +13,10 @@
 [ext_resource type="PackedScene" uid="uid://cbnv6fx5y7vpn" path="res://HorseScene/Horse10.tscn" id="11_gujt3"]
 [ext_resource type="PackedScene" uid="uid://bckbd1ym38emk" path="res://HorseScene/Horse11.tscn" id="12_1a2ir"]
 [ext_resource type="PackedScene" uid="uid://pswxgfj33hnt" path="res://HorseScene/Horse12.tscn" id="13_pp81n"]
+[ext_resource type="PackedScene" uid="uid://bhurt6vn7gkwq" path="res://horses.tscn" id="14_u38ji"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7wifc"]
-size = Vector2(462.375, 18.4243)
+size = Vector2(48.5996, 18.4243)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_6guxl")
@@ -25,16 +26,25 @@ RunningHorse = Array[PackedScene]([ExtResource("2_twpfw"), ExtResource("3_0eewp"
 offset_right = 1152.0
 offset_bottom = 648.0
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Goal" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1072.1, 324.094)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal"]
+position = Vector2(1000.6, 324.094)
 rotation = 3.14159
 scale = Vector2(0.345587, -35.1608)
 shape = SubResource("RectangleShape2D_7wifc")
 
-[node name="Line2D" type="Line2D" parent="Area2D"]
+[node name="Line2D" type="Line2D" parent="Goal"]
 points = PackedVector2Array(1000, 2.08165e-12, 1000, 648)
 width = 20.0
 default_color = Color(0.129412, 0.129412, 0.129412, 1)
 metadata/_edit_group_ = true
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Goal"]
+
+[node name="horses" parent="." instance=ExtResource("14_u38ji")]
+position = Vector2(1152, 111)
+scale = Vector2(0.2, 0.2)
+
+[connection signal="screen_entered" from="Goal/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="Goal/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

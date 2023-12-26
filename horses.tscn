@@ -1,0 +1,102 @@
+[gd_scene load_steps=12 format=3 uid="uid://bhurt6vn7gkwq"]
+
+[ext_resource type="Script" path="res://horses.gd" id="1_ow8gy"]
+[ext_resource type="Texture2D" uid="uid://kdhw00qefird" path="res://textures/栃栗毛.png" id="2_prvvm"]
+[ext_resource type="Texture2D" uid="uid://ck0swvcw32hku" path="res://textures/栃毛.png" id="3_iyn7k"]
+[ext_resource type="Texture2D" uid="uid://lyy4scxpnreh" path="res://textures/白毛.png" id="4_hgu7n"]
+[ext_resource type="Texture2D" uid="uid://ccp2qc2i2bq4b" path="res://textures/芦毛.png" id="5_ljlpn"]
+[ext_resource type="Texture2D" uid="uid://b856yh0fbdo0g" path="res://textures/青毛.png" id="6_xksg5"]
+[ext_resource type="Texture2D" uid="uid://mtli15df16j4" path="res://textures/青鹿毛.png" id="7_ctscy"]
+[ext_resource type="Texture2D" uid="uid://cbaw2elv47yum" path="res://textures/鹿毛.png" id="8_akgy8"]
+[ext_resource type="Texture2D" uid="uid://tfykfjbegmyc" path="res://textures/黒鹿毛.png" id="9_ijv1t"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s0mxe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_prvvm")
+}],
+"loop": true,
+"name": &"栃栗毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_iyn7k")
+}],
+"loop": true,
+"name": &"栃毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_hgu7n")
+}],
+"loop": true,
+"name": &"白毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ljlpn")
+}],
+"loop": true,
+"name": &"芦毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_xksg5")
+}],
+"loop": true,
+"name": &"青毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ctscy")
+}],
+"loop": true,
+"name": &"青鹿毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_akgy8")
+}],
+"loop": true,
+"name": &"鹿毛",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ijv1t")
+}],
+"loop": true,
+"name": &"黒鹿毛",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2mivm"]
+radius = 92.0
+height = 490.0
+
+[node name="horses" type="Area2D"]
+script = ExtResource("1_ow8gy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7, 7)
+sprite_frames = SubResource("SpriteFrames_s0mxe")
+animation = &"黒鹿毛"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_2mivm")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
