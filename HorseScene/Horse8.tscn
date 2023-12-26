@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bd0mbwhnb1fer"]
-
-[ext_resource type="PackedScene" uid="uid://q5gejktvwrci" path="res://HorseScene/BaseHorse.tscn" id="1_bj1dj"]
-
-[node name="Horse8" instance=ExtResource("1_bj1dj")]
-
-[node name="Number" parent="." index="3"]
-text = "8"
