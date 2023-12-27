@@ -10,9 +10,13 @@ config_version=5
 
 [application]
 
-config/name="[ver.β]KRA-Godot"
+config/name="[ver.α]KRA-Godot"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+
+[display]
+
+window/size/mode=2
 
 [rendering]
 
