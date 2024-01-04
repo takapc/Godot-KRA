@@ -4,6 +4,16 @@ class_name Horse
 var speed: int
 var run_type: int
 
+func _ready():
+	rotation = -PI / 40
+	$AnimatedSprite2D.play()
+
+func _on_animated_sprite_2d_frame_changed():
+	if rotation > 0 :
+		rotation -= PI / 20
+	else:
+		rotation += PI / 20
+
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
 
