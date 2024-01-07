@@ -41,20 +41,9 @@ script = ExtResource("3_eoe13")
 [node name="HorseManager" type="Node" parent="."]
 script = ExtResource("4_ilseb")
 
-[node name="ExhaustedTimer" type="Timer" parent="HorseManager"]
-one_shot = true
-
-[node name="DriveTimer" type="Timer" parent="HorseManager"]
-one_shot = true
-
 [connection signal="horse_ready" from="." to="horses" method="_on_main_horse_ready"]
 [connection signal="start_game" from="." to="." method="_on_start_game"]
 [connection signal="start_game" from="." to="horses" method="_on_main_start_game"]
 [connection signal="start_game" from="." to="HorseManager" method="_on_main_start_game"]
 [connection signal="screen_entered" from="Goal/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="Goal/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
-[connection signal="timeout" from="HorseManager/ExhaustedTimer" to="." method="_on_exhausted_timer_timeout"]
-[connection signal="timeout" from="HorseManager/ExhaustedTimer" to="horses" method="_on_exhausted_timer_timeout"]
-[connection signal="timeout" from="HorseManager/ExhaustedTimer" to="HorseManager" method="_on_exhausted_timer_timeout"]
-[connection signal="timeout" from="HorseManager/DriveTimer" to="horses" method="_on_drive_timer_timeout"]
-[connection signal="timeout" from="HorseManager/DriveTimer" to="HorseManager" method="_on_drive_timer_timeout"]

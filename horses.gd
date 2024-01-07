@@ -40,6 +40,19 @@ func initHorseReady():
 	#脚質"追い込み"処理_減速
 	if run_type == 5:
 		speed *= 0.5
+	TimerStart()
+
+func TimerStart():
+	var exhaust = $Haotintin
+	exhaust.timeout.connect(func(): exhaust())
+	exhaust.wait_time = randf_range((speed/15)+52/3,(-speed/15)+55/3)
+	exhaust.start()
+	
+	var drive = $Nintendo
+	drive.timeout.connect(func(): drive())
+	drive.wait_time =  randf_range((-7 * speed/30)+206/3,(-7 * speed/30)+209/3)
+	drive.start()
+	
 
 func exhaust():
 	#脚質"大逃げ"処理_減速
