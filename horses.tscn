@@ -1,31 +1,31 @@
 [gd_scene load_steps=20 format=3 uid="uid://bhurt6vn7gkwq"]
 
 [ext_resource type="Script" path="res://horses.gd" id="1_ow8gy"]
-[ext_resource type="Texture2D" uid="uid://dcbs2ajvqq4bw" path="res://textures/栃栗毛1.png" id="2_fwj0k"]
-[ext_resource type="Texture2D" uid="uid://c8folxsanrrrj" path="res://textures/栃栗毛2.png" id="3_lbixy"]
-[ext_resource type="Texture2D" uid="uid://cave36cqe6dm1" path="res://textures/栗毛1.png" id="4_q2ipe"]
-[ext_resource type="Texture2D" uid="uid://cksjl1ejq3ds0" path="res://textures/栗毛2.png" id="5_tljll"]
-[ext_resource type="Texture2D" uid="uid://bpl6jw0hm14ie" path="res://textures/白毛1.png" id="6_asprv"]
-[ext_resource type="Texture2D" uid="uid://xsme4xucfy7q" path="res://textures/白毛2.png" id="7_gbdky"]
-[ext_resource type="Texture2D" uid="uid://cuopmhhtsf4ku" path="res://textures/芦毛1.png" id="8_aed3b"]
-[ext_resource type="Texture2D" uid="uid://rkxhfiis4kux" path="res://textures/芦毛2.png" id="9_1mf8j"]
-[ext_resource type="Texture2D" uid="uid://b52alk2t2eym3" path="res://textures/青毛1.png" id="10_g2otb"]
-[ext_resource type="Texture2D" uid="uid://m6fj4lwl8u4n" path="res://textures/青毛2.png" id="11_w6ewu"]
-[ext_resource type="Texture2D" uid="uid://b6kkyagcw5pnx" path="res://textures/青鹿毛1.png" id="12_pf4sb"]
-[ext_resource type="Texture2D" uid="uid://c3drq6wvyb5yq" path="res://textures/青鹿毛2.png" id="13_5w6jl"]
-[ext_resource type="Texture2D" uid="uid://jj2g6p54pf0t" path="res://textures/鹿毛1.png" id="14_b4wd8"]
-[ext_resource type="Texture2D" uid="uid://dtlmc1jhol5df" path="res://textures/鹿毛2.png" id="15_d2uun"]
-[ext_resource type="Texture2D" uid="uid://cbx7rw1tpfhgw" path="res://textures/黒鹿毛1.png" id="16_e3gmw"]
-[ext_resource type="Texture2D" uid="uid://dlexd6hph21wi" path="res://textures/黒鹿毛2.png" id="17_xyn35"]
+[ext_resource type="Texture2D" uid="uid://dn4k7ukrb2gd8" path="res://textures/栃栗毛1.png" id="2_rcyry"]
+[ext_resource type="Texture2D" uid="uid://cow3tc0dei040" path="res://textures/栃栗毛2.png" id="3_omuag"]
+[ext_resource type="Texture2D" uid="uid://bjbx4hxlsw7sa" path="res://textures/栗毛1.png" id="4_daine"]
+[ext_resource type="Texture2D" uid="uid://co14n52dwhkui" path="res://textures/栗毛2.png" id="5_7jcy6"]
+[ext_resource type="Texture2D" uid="uid://d2itadyh2ac4d" path="res://textures/白毛1.png" id="6_3jfft"]
+[ext_resource type="Texture2D" uid="uid://bn2edfo0bd67p" path="res://textures/白毛2.png" id="7_hmuhx"]
+[ext_resource type="Texture2D" uid="uid://c2bjyuslo6i62" path="res://textures/芦毛1.png" id="8_lrpou"]
+[ext_resource type="Texture2D" uid="uid://88wd38dgdbuq" path="res://textures/芦毛2.png" id="9_deqsl"]
+[ext_resource type="Texture2D" uid="uid://d1pa7snavhry" path="res://textures/青毛1.png" id="10_lqlj4"]
+[ext_resource type="Texture2D" uid="uid://c6rrn105eftcq" path="res://textures/青毛2.png" id="11_gw2fh"]
+[ext_resource type="Texture2D" uid="uid://co1lr4vaf7ire" path="res://textures/青鹿毛1.png" id="12_s6i1a"]
+[ext_resource type="Texture2D" uid="uid://cvi73sgu2cllm" path="res://textures/青鹿毛2.png" id="13_lxqgr"]
+[ext_resource type="Texture2D" uid="uid://cj8nqcsc5axrq" path="res://textures/鹿毛1.png" id="14_sy4ja"]
+[ext_resource type="Texture2D" uid="uid://bkqlmyf2u38wn" path="res://textures/鹿毛2.png" id="15_dioxv"]
+[ext_resource type="Texture2D" uid="uid://dh7v604rsl5d6" path="res://textures/黒鹿毛1.png" id="16_u34nq"]
+[ext_resource type="Texture2D" uid="uid://bv4x83q4euqr4" path="res://textures/黒鹿毛2.png" id="17_3cov3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s0mxe"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_fwj0k")
+"texture": ExtResource("2_rcyry")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_lbixy")
+"texture": ExtResource("3_omuag")
 }],
 "loop": true,
 "name": &"栃栗毛",
@@ -33,10 +33,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_q2ipe")
+"texture": ExtResource("4_daine")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_tljll")
+"texture": ExtResource("5_7jcy6")
 }],
 "loop": true,
 "name": &"栗毛",
@@ -44,10 +44,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_asprv")
+"texture": ExtResource("6_3jfft")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_gbdky")
+"texture": ExtResource("7_hmuhx")
 }],
 "loop": true,
 "name": &"白毛",
@@ -55,10 +55,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("8_aed3b")
+"texture": ExtResource("8_lrpou")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_1mf8j")
+"texture": ExtResource("9_deqsl")
 }],
 "loop": true,
 "name": &"芦毛",
@@ -66,10 +66,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_g2otb")
+"texture": ExtResource("10_lqlj4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_w6ewu")
+"texture": ExtResource("11_gw2fh")
 }],
 "loop": true,
 "name": &"青毛",
@@ -77,10 +77,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_pf4sb")
+"texture": ExtResource("12_s6i1a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_5w6jl")
+"texture": ExtResource("13_lxqgr")
 }],
 "loop": true,
 "name": &"青鹿毛",
@@ -88,10 +88,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_b4wd8")
+"texture": ExtResource("14_sy4ja")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_d2uun")
+"texture": ExtResource("15_dioxv")
 }],
 "loop": true,
 "name": &"鹿毛",
@@ -99,18 +99,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("16_e3gmw")
+"texture": ExtResource("16_u34nq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_xyn35")
+"texture": ExtResource("17_3cov3")
 }],
 "loop": true,
 "name": &"黒鹿毛",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxopc"]
-size = Vector2(727, 1078)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrtk3"]
+size = Vector2(757.002, 1081)
 
 [node name="horses" type="Area2D"]
 script = ExtResource("1_ow8gy")
@@ -121,9 +121,9 @@ sprite_frames = SubResource("SpriteFrames_s0mxe")
 animation = &"黒鹿毛"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-18, -10.5001)
+position = Vector2(-20.4995, 2.50111)
 rotation = 1.5708
-shape = SubResource("RectangleShape2D_xxopc")
+shape = SubResource("RectangleShape2D_wrtk3")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
@@ -132,11 +132,11 @@ wait_time = 0.05
 autostart = true
 
 [node name="Number" type="Label" parent="."]
-offset_left = -92.0
-offset_top = -83.0
-offset_right = 10.0
-offset_bottom = 41.0
-rotation = 0.0576558
+offset_left = -94.0
+offset_top = -78.0
+offset_right = 8.0
+offset_bottom = 46.0
+rotation = 0.051562
 theme_override_font_sizes/font_size = 90
 text = "12"
 horizontal_alignment = 1

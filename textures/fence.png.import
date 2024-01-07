@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kdhw00qefird"
-path="res://.godot/imported/栃栗毛.png-69080dfe9b7285038dafb56a3a6b24f1.ctex"
+uid="uid://76kph8aid4vu"
+path="res://.godot/imported/fence.png-6b37005262d403eda262a25ddbe8efe0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/栃栗毛.png"
-dest_files=["res://.godot/imported/栃栗毛.png-69080dfe9b7285038dafb56a3a6b24f1.ctex"]
+source_file="res://textures/fence.png"
+dest_files=["res://.godot/imported/fence.png-6b37005262d403eda262a25ddbe8efe0.ctex"]
 
 [params]
 

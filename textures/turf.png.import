@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tfykfjbegmyc"
-path="res://.godot/imported/黒鹿毛.png-d2d19ce472cedaf5715aa677dde988f1.ctex"
+uid="uid://bs2quhhvmkm3y"
+path="res://.godot/imported/turf.png-aa1530fa3d3bdeba99251762f814f247.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/黒鹿毛.png"
-dest_files=["res://.godot/imported/黒鹿毛.png-d2d19ce472cedaf5715aa677dde988f1.ctex"]
+source_file="res://textures/turf.png"
+dest_files=["res://.godot/imported/turf.png-aa1530fa3d3bdeba99251762f814f247.ctex"]
 
 [params]
 

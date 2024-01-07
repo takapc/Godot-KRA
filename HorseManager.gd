@@ -14,54 +14,55 @@ var horse11: Horse
 var horse12: Horse
 
 func _on_main_start_game():
+	var n = 130
 	#(x,y,color,number)
 	horse1 = CreateHorse.new(216, 100, "芦毛", 1).get_horse()
-	horse1.speed = randi_range(100,150)
-	horse1.run_type = randi_range(1,5)
+	horse1.speed = n
+	horse1.run_type = 1
 	add_child(horse1)
 	horse2 = CreateHorse.new(216, 140, "栗毛", 2).get_horse()
-	horse2.speed = randi_range(100,150)
-	horse2.run_type = randi_range(1,5)
+	horse2.speed = n
+	horse2.run_type = 1
 	add_child(horse2)
 	horse3 = CreateHorse.new(216, 180, "芦毛", 3).get_horse()
-	horse3.speed = randi_range(100,150)
-	horse3.run_type = randi_range(1,5)
+	horse3.speed = n
+	horse3.run_type = 2
 	add_child(horse3)
 	horse4 = CreateHorse.new(216, 220, "栗毛", 4).get_horse()
-	horse4.speed = randi_range(100,150)
-	horse4.run_type = randi_range(1,5)
+	horse4.speed = n
+	horse4.run_type = 2
 	add_child(horse4)
 	horse5 = CreateHorse.new(216, 260, "栗毛", 5).get_horse()
-	horse5.speed = randi_range(100,150)
-	horse5.run_type = randi_range(1,5)
+	horse5.speed = n
+	horse5.run_type = 3
 	add_child(horse5)
 	horse6 = CreateHorse.new(216, 300, "栗毛", 6).get_horse()
-	horse6.speed = randi_range(100,150)
-	horse6.run_type = randi_range(1,5)
+	horse6.speed = n
+	horse6.run_type = 3
 	add_child(horse6)
 	horse7 = CreateHorse.new(216, 340, "栗毛", 7).get_horse()
-	horse7.speed = randi_range(100,150)
-	horse7.run_type = randi_range(1,5)
+	horse7.speed = n
+	horse7.run_type = 4
 	add_child(horse7)
 	horse8 = CreateHorse.new(216, 380, "芦毛", 8).get_horse()
-	horse8.speed = randi_range(100,150)
-	horse8.run_type = randi_range(1,5)
+	horse8.speed = n
+	horse8.run_type = 4
 	add_child(horse8)
 	horse9 = CreateHorse.new(216, 420, "栗毛", 9).get_horse()
-	horse9.speed = randi_range(100,150)
-	horse9.run_type = randi_range(1,5)
+	horse9.speed = n
+	horse9.run_type = 4
 	add_child(horse9)
 	horse10 = CreateHorse.new(216, 460, "芦毛", 10).get_horse()
-	horse10.speed = randi_range(100,150)
-	horse10.run_type = randi_range(1,5)
+	horse10.speed = n
+	horse10.run_type = 5
 	add_child(horse10)
 	horse11 = CreateHorse.new(216, 500, "栗毛", 11).get_horse()
-	horse11.speed = randi_range(100,150)
-	horse11.run_type = randi_range(1,5)
+	horse11.speed = n
+	horse11.run_type = 5
 	add_child(horse11)
 	horse12 = CreateHorse.new(216, 540, "栗毛", 12).get_horse()
-	horse12.speed = randi_range(100,150)
-	horse12.run_type = randi_range(1,5)
+	horse12.speed = n
+	horse12.run_type = 5
 	add_child(horse12)
 	$ExhaustedTimer.wait_time = randf_range(10.0,11.0)
 	$ExhaustedTimer.start()
